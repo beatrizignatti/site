@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import media from 'utils/media-queries'
-import { color, fontSize } from 'styles/theme'
+import React from "react";
+import styled from "styled-components";
+import media from "utils/media-queries";
+import { color, fontSize } from "styles/theme";
 
 const H2 = styled.h2`
-  border-top: 2px solid ${color.grey900};
+  border-top: 2px solid #f3caee;
   display: inline-block;
   font-size: ${fontSize.f5};
   color: ${color.grey900};
@@ -29,10 +29,10 @@ const H2 = styled.h2`
       margin-bottom: 60px;
       padding-bottom: 8px;
     `}
-`
+`;
 
 const SectionHeading = (props) => {
-  return <H2>{props.children}</H2>
-}
+  return <H2>{props.children}</H2>;
+};
 
-export default SectionHeading
+export default SectionHeading;

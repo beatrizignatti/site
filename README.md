@@ -1,5 +1,5 @@
 # gabriel-adorf-portfolio
-Gabriel Adorf's personal website built with [gatsby](https://github.com/gatsbyjs/gatsby) and [styled components](https://github.com/styled-components/styled-components).
+Beatriz Ignatti's personal website built with [gatsby](https://github.com/gatsbyjs/gatsby) and [styled components](https://github.com/styled-components/styled-components).
 
 Check it out here: [gabrieladorf.com](https://gabrieladorf.com)
 

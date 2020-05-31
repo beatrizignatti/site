@@ -1,13 +1,13 @@
-import { createGlobalStyle } from 'styled-components'
-import media from 'utils/media-queries'
+import { createGlobalStyle } from "styled-components";
+import media from "utils/media-queries";
 
-import { color, fontSize } from 'styles/theme'
+import { color, fontSize } from "styles/theme";
 
-import TTNBoldWoff from 'fonts/TTNBold.woff'
-import TTNBoldWoff2 from 'fonts/TTNBold.woff2'
+import TTNBoldWoff from "fonts/TTNBold.woff";
+import TTNBoldWoff2 from "fonts/TTNBold.woff2";
 
-import TTNRegularWoff from 'fonts/TTNRegular.woff'
-import TTNRegularWoff2 from 'fonts/TTNRegular.woff2'
+import TTNRegularWoff from "fonts/TTNRegular.woff";
+import TTNRegularWoff2 from "fonts/TTNRegular.woff2";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -155,7 +155,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
       color: ${color.blue500};
     }
     :focus {
-      outline: ${(props) => (props.displayOutlines ? '' : 'none')};
+      outline: ${(props) => (props.displayOutlines ? "" : "none")};
     }
   }
 
@@ -175,6 +175,12 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
       font-size: ${fontSize.f2};
     `}
   }
-`
 
-export default GlobalStyle
+  i u {
+    background-color: #f3caee;
+    padding: 5px;
+    color: #000;
+  }
+`;
+
+export default GlobalStyle;

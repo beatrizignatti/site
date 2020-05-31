@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import media from 'utils/media-queries'
+import React from "react";
+import styled from "styled-components";
+import media from "utils/media-queries";
 
-import { color } from 'styles/theme'
+import { color } from "styles/theme";
 
 const Section = styled.section`
   margin: 0 96px;
@@ -14,7 +14,7 @@ const Section = styled.section`
   `}
   display: flex;
   justify-content: center;
-`
+`;
 
 const Container = styled.div`
   border-top: 1px solid ${color.grey400};
@@ -27,14 +27,14 @@ const Container = styled.div`
     padding: 64px 0;
   `}
   width: 100%;
-`
+`;
 
 const SectionComponent = (props) => {
   return (
     <Section id={props.id}>
       <Container>{props.children}</Container>
     </Section>
-  )
-}
+  );
+};
 
-export default SectionComponent
+export default SectionComponent;

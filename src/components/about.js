@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-import Link from 'gatsby-link'
-import styled from 'styled-components'
-import media from 'utils/media-queries'
+import React, { Fragment } from "react";
+import Link from "gatsby-link";
+import styled from "styled-components";
+import media from "utils/media-queries";
 
-import { color, fontSize } from 'styles/theme'
+import { color, fontSize } from "styles/theme";
 
-import TwoColumns from 'components/twoColumns'
-import SectionHeading from 'components/sectionHeading'
+import TwoColumns from "components/twoColumns";
+import SectionHeading from "components/sectionHeading";
 
 const Big = styled.span`
   font-size: ${fontSize.f6};
@@ -21,36 +21,45 @@ const Big = styled.span`
   ${media.sm`
     font-size: ${fontSize.f5};
   `}
-`
+`;
 
 const About = () => {
   return (
     <TwoColumns
-      leftColumn={<SectionHeading>About</SectionHeading>}
+      leftColumn={<SectionHeading>Sobre</SectionHeading>}
       rightColumn={
         <Fragment>
           <Big>
-            Hi. I'm Gabriel, a UI and UX designer living in&nbsp;Berlin. I bring
-            ideas to life with design and&nbsp;code.
+            Oi, Eu sou a Bia! Sou{" "}
+            <i>
+              <u>UX e UI Designer</u>
+            </i>
+            , amante dos animais. Morando atualmente em São Paulo.
           </Big>
           <p>
-            In my work I strive to optimize the aesthetic value and usability of
-            products without losing sight of the technical challenges and
-            limitations.
+            Sinto que me encontrei no design, em criar soluções que facilitam a
+            vida das pessoas, de ouvir o que elas tem a dizer e de entender o
+            real problema.
           </p>
+
           <p>
-            Currently I'm designing the future of medical infrastructure at{' '}
-            <Link to="/lifetime">LifeTime</Link> and hosting electronic music
-            festivals with <Link to="/kellerkind">Kellerkind</Link>.
+            Além disso, criar interfaces que façam sentido, tanto para criação
+            quanto para os usuários. <i>Tento, erro, aprendo & refaço</i>.
           </p>
+
+          <p>
+            Fora do trabalho eu amo estar com a minha família, minhas cachorras
+            e viajar. Gosto de ler, filmes, jogos de aventura, quebra-cabeças,
+            passear e lojas de construção & decoração.
+          </p>
+
           <p style={{ marginBottom: 0 }}>
-            Outside of work I'm passionate about my family, climbing and riding
-            all kinds of boards on roads, water and snow.
+            <i>Galatas 2:20.</i>
           </p>
         </Fragment>
       }
     />
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import GlobalWrapper from 'components/global-wrapper'
-import Header from 'components/article/header'
-import ContentWrapper from 'components/article/contentwrapper'
-import Footer from 'components/footer'
+import GlobalWrapper from "components/global-wrapper";
+import Header from "components/article/header";
+import ContentWrapper from "components/article/contentwrapper";
+import Footer from "components/footer";
 
 const Imprint = () => {
   return (
@@ -12,7 +12,7 @@ const Imprint = () => {
       <ContentWrapper>
         <h2>Angaben gemäß § 5 TMG</h2>
         <p>
-          Gabriel Adorf
+          Beatriz Ignatti
           <br />
           {process.env.GATSBY_STREET}
           <br />
@@ -26,7 +26,7 @@ const Imprint = () => {
         </p>
         <h3>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h3>
         <p>
-          Gabriel Adorf
+          Beatriz Ignatti
           <br />
           <i>Quelle: Impressumgenerator von www.e-recht24.de</i>
         </p>
@@ -99,7 +99,7 @@ const Imprint = () => {
       </ContentWrapper>
       <Footer />
     </GlobalWrapper>
-  )
-}
+  );
+};
 
-export default Imprint
+export default Imprint;

@@ -1,40 +1,40 @@
-import React, { Fragment, useState, useEffect } from 'react'
-import { Helmet } from 'react-helmet'
-import GlobalStyle from 'styles/global-style'
+import React, { Fragment, useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+import GlobalStyle from "styles/global-style";
 
 const GlobalWrapper = (props) => {
-  const [displayOutlines, setDisplayOutlines] = useState(false)
+  const [displayOutlines, setDisplayOutlines] = useState(false);
 
   const handleKeyboardInput = (e) => {
-    const key = e.keyCode || e.charCode
+    const key = e.keyCode || e.charCode;
     // Tab
     if (key === 9) {
-      setDisplayOutlines(true)
+      setDisplayOutlines(true);
     }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener('keydown', (e) => handleKeyboardInput(e))
-  })
+    window.addEventListener("keydown", (e) => handleKeyboardInput(e));
+  });
 
   return (
     <Fragment>
       <Helmet>
-        <html lang="en" />
-        <title>Gabriel Adorf</title>
-        <meta name="description" content="Gabriel Adorf's projects" />
+        <html lang="pt-BR" />
+        <title>Beatriz Ignatti</title>
+        <meta name="description" content="Beatriz Ignatti's projects" />
         <meta
           name="keywords"
-          content="design, ux, ui, product, graphic, health, climbing, app, interface, experience, festival, techno, code"
+          content="design, ux, ui, product, graphic, interface, experience  "
         />
-        <meta
+        {/* <meta
           property="og:image"
           content="https://www.gabrieladorf.com/static/kellerkindCover-14f87246d1614ff1cf339940bdc58186.jpg"
-        />
-        <meta property="og:description" content="Gabriel Adorf's projects" />
+        /> */}
+        <meta property="og:description" content="Beatriz Ignatti's projects" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://gabrieladorf.com" />
-        <meta property="og:title" content="Gabriel Adorf" />
+        <meta property="og:url" content="https://biaignatti.com" />
+        <meta property="og:title" content="Beatriz Ignatti" />
 
         <link
           rel="apple-touch-icon"
@@ -60,7 +60,7 @@ const GlobalWrapper = (props) => {
       <GlobalStyle displayOutlines={displayOutlines} />
       {props.children}
     </Fragment>
-  )
-}
+  );
+};
 
-export default GlobalWrapper
+export default GlobalWrapper;

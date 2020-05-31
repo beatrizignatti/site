@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import media from 'utils/media-queries'
+import React from "react";
+import styled from "styled-components";
+import media from "utils/media-queries";
 
-import { fontSize } from 'styles/theme'
+import { fontSize } from "styles/theme";
 
-import Section from 'components/section'
+import Section from "components/section";
 
 const FooterText = styled.div`
   text-align: center;
@@ -16,19 +16,20 @@ const FooterText = styled.div`
     text-align: left;
     font-size: ${fontSize.f1};
   `}
-`
+`;
 
 const Footer = () => {
   return (
     <Section>
       <FooterText>
-        This page is open source, Check it out on&nbsp;
-        <a href="https://github.com/gabdorf/gabriel-adorf-portfolio">Github</a>
-        <br />© 2020 Gabriel Adorf&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-        <a href="/imprint">Imprint</a>
+        {/* This page is open source, Check it out on&nbsp;
+        <a href="https://github.com/gabdorf/gabriel-adorf-portfolio">Github</a> */}
+        <br />© 2020 Beatriz Ignatti
+        {/* <br />© 2020 Beatriz Ignatti&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; */}
+        {/* <a href="/imprint">Imprint</a> */}
       </FooterText>
     </Section>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
