@@ -50,8 +50,10 @@ const ProjectImage = (props) => {
       <img src={props.logo} style={{
         display: 'block',
         borderRadius: '100%',
-        paddingRight: 50,
-        width: 150
+        background: 'red',
+        height: '100px',
+        width: '100px',
+        marginRight: '30px',
       }}
       />
       <Description>
