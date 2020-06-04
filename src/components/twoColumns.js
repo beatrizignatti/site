@@ -8,6 +8,7 @@ const Div = styled.div`
   grid-template-columns: 100px auto;
   justify-content: space-between;
   width: 100%;
+  margin-bottom: 100px;
   ${media.md`
     grid-template-columns: auto;
     justify-content: center;
@@ -26,7 +27,7 @@ const RightColumn = styled.div`
 const TwoColumns = (props) => {
   return (
     <Div>
-      <LeftColumn>{props.leftColumn}</LeftColumn>
+      <LeftColumn>{props.leftColumn && props.leftColumn}</LeftColumn>
       <RightColumn wide={props.wide}>{props.rightColumn}</RightColumn>
     </Div>
   )

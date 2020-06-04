@@ -20,9 +20,9 @@ const App = () => {
       {/* <Section id={"projects"}>
         <Work />
       </Section> */}
-      {/* <Section>
+      <Section>
         <Writing />
-      </Section> */}
+      </Section>
       <Footer />
     </GlobalWrapper>
   );

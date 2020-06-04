@@ -12,9 +12,9 @@ const HeroSection = styled.section`
   flex-direction: column;
   overflow: hidden;
   width: 100%;
-  ${media.sm`
+  /* ${media.sm`
     height: calc(100vh - 76px);
-  `}
+  `} */
 `;
 
 const Hero = () => {
