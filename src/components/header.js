@@ -173,7 +173,7 @@ const Header = (props) => {
           </NameLink>
         )}
         {!props.article && <Name article={props.article}>Beatriz Ignatti</Name>}
-        {!props.article && <Role>UI / UX Designer</Role>}
+        {/* {!props.article && <Role>UI / UX Designer</Role>} */}
       </LogoWrapper>
       <div>
         <SocialLinks article={props.article}>

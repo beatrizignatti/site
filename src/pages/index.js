@@ -17,9 +17,9 @@ const App = () => {
       <Section id={"about"}>
         <About />
       </Section>
-      {/* <Section id={"projects"}>
+      <Section id={"projects"}>
         <Work />
-      </Section> */}
+      </Section>
       <Section>
         <Writing />
       </Section>

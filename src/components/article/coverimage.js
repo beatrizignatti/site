@@ -11,10 +11,10 @@ const Image = styled.div`
   width: 100%;
   height: calc(100vh - 170px);
   ${media.lg`
-    height: calc(100vh - 148px);
+    max-height: 500px;
   `}
   ${media.sm`
-    height: calc(100vh - 184px);
+    max-height: 200px;
   `}
 `
 
