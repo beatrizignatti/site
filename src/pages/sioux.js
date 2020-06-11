@@ -112,7 +112,7 @@ const LifeTime = () => {
   return (
     <GlobalWrapper>
       <Header title="Sioux Group" />
-      <CoverImage src={CoverSrc} focusX={'35%'} focusY={'50%'} />
+      {/* <CoverImage src={CoverSrc} focusX={'35%'} focusY={'50%'} /> */}
       <Section>
         <ContentWrapper>
           <h2>Sioux - Trabalhos</h2>
